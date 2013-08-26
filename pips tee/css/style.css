@@ -14,20 +14,69 @@ body{
 	color: #f4f4f4;
 }
 
-div.header{
-	height: 350px;
-	width: 100%;
-}
-
 h1{
 	text-indent: -9999px;
 	background-image: url(../img/logo_grijs.png);
 	background-repeat: no-repeat;
 	height: 110px;
+	width: 275px;
+	margin: 15px auto;
 }
 
 h2{
 	font-family: 'governorregular';
 	font-size: 48px;
 	text-align: center;
+	line-height: 72px;
+	margin-top: -10px;
+}
+
+h3.soort{
+	text-align: center;
+	font-size: 36px;
+}
+
+div.float img{
+	height: 200px;
+	width: 300px;
+	margin-left: 20px;
+}
+
+div.float p{
+	font-size: 18px;
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+	line-height: 27px;
+	padding-bottom: 10px;
+}
+
+div.float p:last-child{
+	border-bottom: 1px solid #ff6e6e;
+	padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+	div.artikel_thee{
+		margin: 0 auto;
+	}
+
+	div.float p:last-child{
+		border-bottom: none;
+	}
+}
+
+@media (min-width: 1200px){
+	div.header{
+		height: 250px;
+	}
+
+	div.float p:last-child{
+		border-bottom: none;
+	}
+
+	div.float{
+		width: 300px;
+		float: left;
+	}
 }
