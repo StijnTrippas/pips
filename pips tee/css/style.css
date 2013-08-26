@@ -12,6 +12,8 @@
 body{
 	background-color: #171717;
 	color: #f4f4f4;
+	max-width: 1500px;
+	margin: 0 auto;
 }
 
 h1{
@@ -56,6 +58,30 @@ div.float p:last-child{
 	padding-bottom: 10px;
 }
 
+div.footer{
+	margin: 0 auto;
+}
+
+
+
+@media (min-width: 320px) {
+	div.float img{
+		padding-left: 25px;
+		margin-top: -10px;
+	}
+
+	div.footer p{
+		width: 300px;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 20px;
+	}
+
+	div.footer iframe{
+		padding-left: 25px;
+	}
+}
+
 @media (min-width: 768px) {
 	div.artikel_thee{
 		margin: 0 auto;
@@ -66,9 +92,19 @@ div.float p:last-child{
 	}
 }
 
+@media (min-width: 1024px){
+	div.float img{
+		padding-left: 80px;
+	}
+}
+
 @media (min-width: 1200px){
 	div.header{
 		height: 250px;
+	}
+
+	div.float img{
+		padding-left: 0;
 	}
 
 	div.float p:last-child{
